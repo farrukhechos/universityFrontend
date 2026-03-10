@@ -1,5 +1,6 @@
 
-// Compare operators
+// Compare operators (taqqoslsh operatorlari)
+
 // #1 <
 // #2 >
 // #3 >=
@@ -8,6 +9,13 @@
 // #6 ===
 // #7 !=
 // #9 !==
+
+if (2 < 4){
+    console.log("Hello 4")
+} else{
+    console.log("Hello 2")
+}
+
 
 
 
@@ -20,11 +28,4 @@
 // #5 *=
 // #6 %=
 
-const plusOne = function(digits) {
-    let numbers= []
-    numbers.push(digits)
-    let newDigs = numbers[numbers.length - 1] + 1
-    console.log(newDigs)
-};
 
-plusOne([1,2,3])
