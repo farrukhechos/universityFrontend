@@ -21,12 +21,27 @@
 // }
 // console.log(hypot(5, 8))
 
-function findBig(arr){
-    let big = arr[0]
-    for (let i = 0; i < arr.length; i++){
-       if(arr[i] > big) big = arr[i]
-    }
-    return big
+// function findBig(arr){
+//     let big = arr[0]
+//     for (let i = 0; i < arr.length; i++){
+//        if(arr[i] > big) big = arr[i]
+//     }
+//     return big
+// }
+// let k = [1,2,12,4,5,6,7,19]
+// console.log(findBig(k))
+
+
+
+function findNeedNumber(arr, x){
+
+   for (let i = 0; i < arr.length; i++){
+       if(arr[i] === x){
+           return true
+       }
+   }
+   return false
 }
-let k = [1,2,12,4,5,6,7,19]
-console.log(findBig(k))
+
+let arr = [ 1,2,3,4,5,6,7,8]
+console.log(findNeedNumber(arr, 9))
