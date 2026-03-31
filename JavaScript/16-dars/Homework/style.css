@@ -1,0 +1,112 @@
+#header{
+    width: 340px;
+    height: 420px;
+    border: 2px solid grey;
+    margin:0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.52);
+
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 20px;
+
+}
+.inputSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inputSection input{
+    width: 100%;
+    height: 30px;
+    border:1px solid black;
+
+}
+#firstNumberInput{
+    border-right: none;
+    border-right-radius: 10px;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 8px;
+    padding:4px;
+}
+#secondNumberInput{
+    border-left: none;
+    outline: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 20px;
+    padding:4px;
+}
+.buttonSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.buttonsrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.buttonsrow button{
+    width: 70px;
+    height: 70px;
+    border-radius: 40%;
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 10px 50px 60px grey;
+    position: relative;
+}
+.buttonsrow button::after {
+    content: attr(data-tooltip); /* HTML-dagi data-tooltip qiymatini oladi */
+    position: absolute;
+    bottom: 125%; /* Tugmadan biroz tepada turishi uchun */
+    left: 50%;
+    transform: translateX(-50%); /* Markazga tekislash */
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0; /* Boshida ko'rinmaydi */
+    visibility: hidden;
+    transition: opacity 0.3s ease; /* Sekin chiqishi uchun */
+}
+
+/* Tooltipning pastki qismidagi kichkina uchburchak (strelka) */
+.buttonsrow button::before {
+    content: "";
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #333; /* Uchburchak rangi */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover bo'lganda ko'rinishi */
+.buttonsrow button:hover::after,
+.buttonsrow buttonhover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.buttonsrow button:last-child{
+    background-color: rgba(255, 165, 0, 0.78);
+
+}
+.buttonsrow button:hover{
+    transform: scale(1.04);
+    transition: ease-in-out 0.1s;
+    box-shadow: none;
+}

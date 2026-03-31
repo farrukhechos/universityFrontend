@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header id="header">
+    <div class="container">
+
+        <div class="inputSection">
+            <input type="number" class="firstNumberInput" id="firstNumberInput" placeholder="First Number"/>
+            <input type="number" class="secondNumberInput" id="secondNumberInput" placeholder="Second Number"/>
+        </div>
+
+        <div class="buttonSection">
+            <div class="buttonsrow">
+                <button id="clean" onclick="clean()" data-tooltip="Clean" >C</button>
+                <button id="division" onclick="division()" data-tooltip="/" >/</button>
+                <button id="plus" onclick="plus()" data-tooltip="+" >+</button>
+                <button id="minus" onclick="minus()" data-tooltip="-" >-</button>
+            </div>
+
+            <div class="buttonsrow">
+                <button id="seven" data-tooltip="Ishlamaydi" >7</button>
+                <button id="eight" data-tooltip="Ishlamaydi" >8</button>
+                <button id="nine" data-tooltip="Ishlamaydi" >9</button>
+                <button id="multiplication" onclick="multiplication()" data-tooltip="*" > *</button>
+            </div>
+
+            <div class="buttonsrow">
+                <button id="four" data-tooltip="Ishlamaydi" >4</button>
+                <button id="five" data-tooltip="Ishlamaydi" >5</button>
+                <button id="six" data-tooltip="Ishlamaydi" >6</button>
+                <button id="percentageDivision" onclick="percentageDivision()" data-tooltip="%" >%</button>
+            </div>
+            <div class="buttonsrow">
+                <button id="one" data-tooltip="Ishlamaydi" >1</button>
+                <button id="two" data-tooltip="Ishlamaydi" >2</button>
+                <button id="three" data-tooltip="Ishlamaydi" >3</button>
+                <button id="equal" data-tooltip="Ishlamaydi" >=</button>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+<script src="./calc.js"></script>
+</html>
