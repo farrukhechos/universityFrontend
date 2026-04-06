@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header id="header">
+    <div id="welcome">
+        <h4 id="titleText">Welcome Back</h4>
+        <p id="welcomeDetail">Enter your personal details to see all of site features</p>
+        <button id="signInBtn">Sign in</button>
+    </div>
+
+    <div class="inputElements">
+        <h4 id=elementsTitle>Create Account</h4>
+        <div id="socialButtons">
+            <button class="google"><i class="fab fa-google"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="github"><i class="fab fa-github"></i></button>
+            <button class="linkedin"><i class="fab fa-linkedin-in"></i></button>
+        </div>
+        <p>or use your email for registration</p>
+        <div id="inputs">
+            <input id="name" type="text" placeholder="name"/>
+            <input id="email" type="text" placeholder="Email"/>
+            <input id="password" type="password" placeholder="Password"/>
+        </div>
+        <button id="signUpBtn" onclick="signUp()">Sign Up</button>
+    </div>
+</header>
+</body>
+<script src="main.js"></script>
+</html>
