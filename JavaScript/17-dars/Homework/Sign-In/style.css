@@ -1,0 +1,151 @@
+*{
+    /*padding: 0;*/
+    margin: 0;
+}
+body{
+    background-image: url("./img.png");
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* gorizontal */
+    align-items: center;     /* vertikal */
+    margin: 0;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 800px;
+    /*height: 100%;*/
+    background-color: rgba(169, 169, 169, 0.71);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+#welcome{
+    width: 50%;
+    height: 400px;
+    background-color: rgb(109, 66, 236);
+    border-top-right-radius:  40px;
+    border-bottom-right-radius:  40px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+#titleText{
+    color: white;
+    font-family: sans-serif;
+}
+#welcomeDetail{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+#signInBtn{
+    background-color:transparent;
+    border:1px solid white;
+    color: white;
+    padding: 10px 30px;
+    border-radius:8px;
+    cursor: pointer;
+}
+
+.inputElements{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+#elementsTitle{
+    color: black;
+    font-family: sans-serif;
+}
+#socialButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#socialButtons button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+#socialButtons {
+    display: flex;
+    gap: 10px;
+}
+
+#socialButtons button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Icon ranglari (brand) */
+.google i {
+    color: #DB4437;
+}
+
+.facebook i {
+    color: #1877F2;
+}
+
+.github i {
+    color: #333;
+}
+
+.linkedin i {
+    color: #0A66C2;
+}
+
+/* Hover */
+#socialButtons button:hover {
+    transform: scale(1.1);
+    background: #f5f5f5;
+}
+
+#inputs{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#inputs input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border:1px solid black;
+    outline: none;
+    padding: 4px;
+}
+
+#signUpBtn{
+    width: 100%;
+    background-color:blue;
+    color: white;
+    padding: 10px 30px;
+    border-radius:8px;
+    border: none;
+    cursor: pointer;
+}
+#forgotpassword:hover{
+    color:white;
+    text-decoration: underline;
+}

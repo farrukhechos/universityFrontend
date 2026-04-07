@@ -54,6 +54,7 @@ p{
     color: white;
     padding: 10px 30px;
     border-radius:8px;
+    cursor: pointer;
 }
 
 .inputElements{
@@ -142,4 +143,5 @@ p{
     padding: 10px 30px;
     border-radius:8px;
     border: none;
+    cursor: pointer;
 }

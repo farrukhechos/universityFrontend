@@ -6,6 +6,10 @@ function signUp(){
     if(nameInput.value.length && emailInput.value.length && passwordInput.value.length > 8){
         alert("Welcome to our platform")
     }else{
-        console.log("Please enter your name");
+        alert("Please enter you personal data to inputs")
     }
+}
+
+function toSignIn(){
+    window.location.href = '../Sign-in/signIn.html'
 }

@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign In</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<header id="header">
+    <div id="welcome">
+        <h4 id="titleText">Hello Dear's</h4>
+        <p id="welcomeDetail">You have more option if you are a new user. Please sign Up to access</p>
+        <button id="signInBtn" onclick="toSignUp()">Sign Up</button>
+    </div>
 
+    <div class="inputElements">
+        <h4 id=elementsTitle>Log In</h4>
+        <div id="socialButtons">
+            <button class="google"><i class="fab fa-google"></i></button>
+            <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="github"><i class="fab fa-github"></i></button>
+            <button class="linkedin"><i class="fab fa-linkedin-in"></i></button>
+        </div>
+        <p>or use your email passord</p>
+        <div id="inputs">
+            <input id="email" type="text" placeholder="Email"/>
+            <input id="password" type="password" placeholder="Password"/>
+        </div>
+        <p id="forgotpassword" onclick="recreatePassword()" style="cursor: pointer;">Forgot your password</p>
+        <button id="signUpBtn" onclick="signIn()">Sign In</button>
+    </div>
+</header>
 </body>
+<script src="main.js"></script>
 </html>
