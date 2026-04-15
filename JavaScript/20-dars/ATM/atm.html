@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM</title>
+    <link rel="stylesheet" href="./atm-style.css">
+</head>
+<body>
+<div class="atm-shell">
+    <header class="atm-header">
+        <span class="atm-title">ATM</span>
+        <span class="atm-card-return">Card Return</span>
+    </header>
+
+    <div class="atm-body">
+        <section class="atm-panel atm-panel-left">
+            <div>
+                <p class="panel-welcome">Welcome</p>
+                <h1 class="panel-name">Steph Curry</h1>
+            </div>
+
+            <div class="panel-balance">
+                <div class="balance-item">
+                    <span class="label">Account #1</span>
+                    <strong>$2,380</strong>
+                </div>
+                <div class="balance-item">
+                    <span class="label">Savings #2</span>
+                    <strong>$795</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="atm-panel atm-panel-right">
+            <div class="actions-grid">
+                <button class="action-card">Get Cash</button>
+                <button class="action-card">Deposit</button>
+                <button class="action-card">Payments</button>
+                <button class="action-card">Credit Card</button>
+                <button class="action-card">Account Settings</button>
+                <button class="action-card action-secondary">Other</button>
+            </div>
+            <button class="quick-cash">
+                <span class="quick-amount">$70</span>
+                <span class="quick-label">Quick Cash</span>
+            </button>
+        </section>
+    </div>
+</div>
+<script src="./atm.js"></script>
+</body>
+</html>
