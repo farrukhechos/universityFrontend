@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Random Groupmates Game</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-$END$
+<header class="header">
+    <h4 class="title">You are lucky</h4>
+    <div class="imgContainer">
+        <img src="./img.png" alt="">
+        <span id="name">Are you lucky? Click the play!</span>
+    </div>
+    <button class="playBtn" onclick="getRandomPerson()">Play</button>
+    <p id="money" onclick="takeMoney()">Give me money and you never seen again!</p>
+</header>
 </body>
+<script src="main.js"></script>
 </html>

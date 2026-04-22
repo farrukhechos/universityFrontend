@@ -40,6 +40,7 @@ function condition(result){
         alert(`You are so lazy bro! It is easy math \n ANSWER ${result}`)
     }
 }
+
 function division(){
     let result = firstNumberInput.value / secondNumberInput.value
    condition(result)

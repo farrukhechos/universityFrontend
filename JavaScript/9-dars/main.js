@@ -11,23 +11,22 @@
 
 // array berilgan arrayning katta elementi va kichik elementini toping builin functiondan foydalanmang
 
-let arr = [1,9,0,8,-4];
+// var removeElement = function(nums, val) {
+//     for(let i = 0; i < nums.length; i++){
+//         if(nums[i] === val){
+//         nums.splice(i, 1)
+//         }  
+//     }
+//     return nums
+// };
 
-let bigNum = arr[0];
-let smallNum = arr[0];
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > bigNum) bigNum = arr[i];
-    if(arr[i] < smallNum) smallNum = arr[i];
+
+var chunk = function(arr, size){
+    
 }
-let bigIndex = arr.indexOf(bigNum);
-let smallIndex = arr.indexOf(smallNum);
 
-// let temp = arr[bigIndex];
-// arr[bigIndex] = arr[smallIndex];
-// arr[smallIndex] = temp;
-
-
-console.log(arr);
+let arr = [[1],2,3,4,5,6,7,8,9]
+console.log(arr)
 
 
 
